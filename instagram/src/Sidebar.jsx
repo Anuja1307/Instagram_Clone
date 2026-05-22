@@ -4,7 +4,7 @@ function Sidebar() {
   return (
     <>
     <div>
-        <div className='d-flex flex-column gap-4'> 
+        <div className='d-flex flex-column gap-4 position-fixed'> 
                 <img src="./src/assets/instagram_text.png" alt="" style={{width:'180px'}}/>
                 <div> <i class="bi bi-house-door-fill"></i> Home</div>
                 <div> <i class="bi bi-search"></i> Search</div>

@@ -1,0 +1,70 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "user": {
+        "id": 101,
+        "username": "sarahh",
+        "profile_pic": "/profile1.png"
+      },
+      "image": "/post1.png",
+      "caption": "Where the waves meet the soul 🌊✨ #BeachLife #GoldenHour",
+      "likes": 842,
+      "comments": [
+        {
+          "user": "priyaa",
+          "comment": "This is absolutely stunning! 😍"
+        },
+        {
+          "user": "pinkyy",
+          "comment": "Which beach is this? 🏖️"
+        }
+      ],
+      "timestamp": "2026-05-20T08:30:00Z"
+    },
+    {
+      "id": 2,
+      "user": {
+        "id": 102,
+        "username": "pinkyy",
+        "profile_pic": "/profile2.png"
+      },
+      "image": "/post2.png",
+      "caption": "Salt in the air, sand in my hair 🐚🌸 #AestheticBeach #Dreamy",
+      "likes": 1243,
+      "comments": [
+        {
+          "user": "sweety",
+          "comment": "This feed is everything 🤍"
+        },
+        {
+          "user": "sarahh",
+          "comment": "Take me here right now 🌊"
+        }
+      ],
+      "timestamp": "2026-05-21T10:15:00Z"
+    },
+    {
+      "id": 3,
+      "user": {
+        "id": 103,
+        "username": "Daisy",
+        "profile_pic": "/profile3.png"
+      },
+      "image": "/post3.png",
+      "caption": "Chasing sunsets and saltwater 🌅🫧 #SunsetBeach #Aesthetic",
+      "likes": 976,
+      "comments": [
+        {
+          "user": "priyaa",
+          "comment": "The colors are unreal 🧡"
+        },
+        {
+          "user": "kaviyaa",
+          "comment": "Living for this aesthetic 💙"
+        }
+      ],
+      "timestamp": "2026-05-22T17:45:00Z"
+    }
+  ]
+}
