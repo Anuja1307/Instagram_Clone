@@ -123,5 +123,12 @@
       "image": "/story3.png"
     }
   ],
+  "followers": [
+    {
+      "id": "MAD7yi0VisQ",
+      "username": "cindrella",
+      "profile_pic": "/profile5.png"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

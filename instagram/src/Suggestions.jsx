@@ -1,4 +1,5 @@
 import React, { useState,useEffect } from 'react'
+import axios from 'axios';
 
 function Suggestions() {
 
@@ -17,6 +18,12 @@ function Suggestions() {
     catch((err)=>console.log(err))
 
   },[])
+
+  const handleFollow=async (id,username,profile_pic)=>{
+     axios.post('http://localhost:3000/followers',{"id":id,"username":username,"profile_pic":profile_pic})
+     .then(alert('followed'))
+    
+  }
 
 
   return (
@@ -44,7 +51,9 @@ function Suggestions() {
                           <img src={user.profile_pic} alt="" className='dp rounded-circle'/>
                           <small style={{fontWeight:"bold"}}>{user.username}</small>
                       </div>
-                      <small style={{color:"#0095f6", fontWeight:"bold", cursor:"pointer"}}>Follow</small>
+                      <button style={{color:"#0095f6", fontWeight:"bold", cursor:"pointer"}} onClick={()=>handleFollow(user.id,user.username,user.profile_pic)
+
+                      }>Follow</button>
                   </div>
               ))}
         </div>

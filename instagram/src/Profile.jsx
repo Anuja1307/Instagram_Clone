@@ -5,12 +5,18 @@ import { useEffect,useState } from 'react';
 export default function Profile() {
 
   const [profile,setProfile]=useState(null);
+  const [followers,setFollowers]=useState([]);
+  const [unfollow,setUnfollow]=useState(0);
 
   useEffect(()=>{
     axios.get("http://localhost:3000/profile")
     .then(data=>setProfile(data.data))
     .catch(err=>console.log(err))
-  },[])
+
+    axios.get("http://localhost:3000/followers")
+    .then(data=>setFollowers(data.data))
+    .catch(err=>console.log(err))
+  },[unfollow])
 
   function handleOnChange(e){
     setProfile(prev=>({
@@ -19,6 +25,13 @@ export default function Profile() {
         })
     )
   }
+
+ const handleUnfollow=async (id)=>{
+    axios.delete(`http://localhost:3000/followers/${id}`)
+    .then(alert("Unfollowed"))
+    .then(setUnfollow(!unfollow))
+    .catch(err=>console.log(err))
+ }
 
   const handleUpdate=async ()=>{
     axios.put("http://localhost:3000/profile",profile)
@@ -30,6 +43,7 @@ export default function Profile() {
     <div className='m-5'>
         {
             profile?(
+
                 <div >
                     <img src={profile.profile_pic} alt="" className='profile rounded-circle' />
                     <h5 className>{profile.username}</h5>
@@ -39,7 +53,36 @@ export default function Profile() {
 
                     <button className='btn btn-primary' onClick={handleUpdate}>Update</button>
                 </div>
+
+
             ):(<p>Loading </p>)
+        }
+        <div style={{width:"300px", marginTop:"15px",marginBottom:"5px", fontWeight:"bolder"}}>FOLLOWERS</div>
+        {
+            followers.length>0?(
+                <div>
+                   {
+                    followers.map(follower=>(
+                        <div className='d-flex justify-content-between m-2'> 
+                            <div >
+                                <img src={follower.profile_pic} alt="" key={follower.id} className='rounded-circle dp' />
+                                <small>{follower.username}</small>
+                            </div>
+
+                            <button onClick={()=>handleUnfollow(follower.id)}className='btn btn-secondary'>Unfollow</button>
+                        </div>
+                    
+
+                    ))
+                   }
+                </div>
+
+                
+            ):(<div>Loading Followers</div>)
+
+            
+
+
         }
 
 
