@@ -40,3 +40,9 @@
     border: 3px solid transparent;
     background-clip: padding-box; 
 }
+
+.profile{
+  width: 100px;
+  height: 100px;
+  
+}

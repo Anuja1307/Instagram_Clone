@@ -1,7 +1,7 @@
 {
   "posts": [
     {
-      "id": 1,
+      "id": "1",
       "user": {
         "id": 101,
         "username": "sarahh",
@@ -23,7 +23,7 @@
       "timestamp": "2026-05-20T08:30:00Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "user": {
         "id": 102,
         "username": "pinkyy",
@@ -45,7 +45,7 @@
       "timestamp": "2026-05-21T10:15:00Z"
     },
     {
-      "id": 3,
+      "id": "3",
       "user": {
         "id": 103,
         "username": "Daisy",
@@ -67,43 +67,45 @@
       "timestamp": "2026-05-22T17:45:00Z"
     }
   ],
-  "profile":{
-        "id": 102,
-        "username": "pinkyy",
-        "profile_pic": "/profile2.png"
-      },
-  "suggestions":[{
-        "id": 103,
-        "username": "Daisy",
-        "profile_pic": "/profile3.png"
-      },{
-        "id": 106,
-        "username": "Dairy",
-        "profile_pic": "/post1.png"
-      },
-     {
-    "id": 105,
-    "username": "rosy",
-    "profile_pic": "/profile1.png"
+  "profile": {
+    "id": 102,
+    "username": "pinkyy_1307",
+    "profile_pic": "/profile2.png"
   },
- {
-    "id": 104,
-    "username": "cindrella",
-    "profile_pic": "/profile5.png"
-  }],
-  "stories":[
+  "suggestions": [
     {
-      "id": 1,
+      "id": "103",
+      "username": "Daisy",
+      "profile_pic": "/profile3.png"
+    },
+    {
+      "id": "106",
+      "username": "Dairy",
+      "profile_pic": "/post1.png"
+    },
+    {
+      "id": "105",
+      "username": "rosy",
+      "profile_pic": "/profile1.png"
+    },
+    {
+      "id": "104",
+      "username": "cindrella",
+      "profile_pic": "/profile5.png"
+    }
+  ],
+  "stories": [
+    {
+      "id": "1",
       "user": {
         "id": 101,
         "username": "sarahh",
         "profile_pic": "/profile1.png"
       },
       "image": "/story1.png"
-     
     },
     {
-      "id": 2,
+      "id": "2",
       "user": {
         "id": 102,
         "username": "pinkyy",
@@ -112,7 +114,7 @@
       "image": "/story2.png"
     },
     {
-      "id": 3,
+      "id": "3",
       "user": {
         "id": 103,
         "username": "Daisy",
@@ -120,5 +122,6 @@
       },
       "image": "/story3.png"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

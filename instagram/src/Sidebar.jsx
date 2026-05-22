@@ -1,6 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router'
 
 function Sidebar() {
+
+  const navigate=useNavigate();
   return (
     <>
     <div>
@@ -13,7 +16,7 @@ function Sidebar() {
                 <div><i class="bi bi-chat-dots"></i> Messages</div>
                 <div><i class="bi bi-heart"></i> Notifications</div>
                 <div><i class="bi bi-plus-square"></i>Create</div>
-                <div><i class="bi bi-person-circle"></i> Profile</div>
+                <div onClick={()=>navigate("/profile")}><i class="bi bi-person-circle" ></i> Profile</div>
          </div>
 
           <div className='d-flex flex-column gap-3 position fixed-bottom'>
