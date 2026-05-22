@@ -5,7 +5,7 @@ import Posts from './Posts'
 function Feed() {
   return (
     <div>
-      <div><Story></Story></div>
+      <div><Story/></div>
       <div><Posts/></div>
     </div>
   )
