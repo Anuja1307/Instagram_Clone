@@ -38,5 +38,5 @@
     padding: 2px;
     background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
     border: 3px solid transparent;
-    background-clip: padding-box;
+    background-clip: padding-box; 
 }
