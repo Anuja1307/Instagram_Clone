@@ -14,16 +14,16 @@ function Posts() {
 
 
   return ( 
-    <div className='display-flex justify-content-center'>
+    <div className='d-flex justify-content-center'>
     {posts.length > 0 ? (
     <div>
           <div>
       {
         posts.map(post => (
-           <div key={post.id} > 
+           <div key={post.id} className='m-5'> 
                 <div className='d-flex my-2'>
                   <img src={post.user.profile_pic} alt="profile" className='rounded-circle dp' />
-                  <h6 style={{fontWeight:"bold"}}>{post.user.username}</h6>
+                  <small style={{fontWeight:"bold", fontSize:"15px"}} className='ms-1'>{post.user.username}</small>
                 </div>
                 <div>
                   <img src={post.image} alt="post" className='post' />

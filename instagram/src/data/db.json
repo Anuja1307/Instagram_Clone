@@ -66,5 +66,29 @@
       ],
       "timestamp": "2026-05-22T17:45:00Z"
     }
-  ]
+  ],
+  "profile":{
+        "id": 102,
+        "username": "pinkyy",
+        "profile_pic": "/profile2.png"
+      },
+  "suggestions":[{
+        "id": 103,
+        "username": "Daisy",
+        "profile_pic": "/profile3.png"
+      },{
+        "id": 106,
+        "username": "Dairy",
+        "profile_pic": "/post1.png"
+      },
+     {
+    "id": 105,
+    "username": "rosy",
+    "profile_pic": "/profile1.png"
+  },
+ {
+    "id": 106,
+    "username": "cindrella",
+    "profile_pic": "/profile5.png"
+  }]
 }
